@@ -1,0 +1,8 @@
+namespace: argocd
+helm:
+  releaseName: argocd
+  chart: argo-cd
+  repo: https://argoproj.github.io/argo-helm
+  version: 8.1.3  # adjust as needed
+  valuesFiles:
+    - helm-values.yaml

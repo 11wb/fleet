@@ -1,0 +1,20 @@
+global:
+  domain: argocd.wesley.fundaments.support
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx-fundaments
+    hosts:
+      - argocd.wesley.fundaments.support
+    tls:
+      - hosts:
+          - argocd.wesley.fundaments.support
+        secretName: argocd-tls
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-staging
+
+configs:
+  params:
+    server.insecure: true
+
