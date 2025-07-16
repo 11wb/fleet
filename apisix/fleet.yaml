@@ -1,6 +1,7 @@
 defaultNamespace: apisix
 helm:
   releaseName: apisix
+  repo: https://charts.apiseven.com
   chart: apisix/apisix
   version: 3.13.0 # Replace with latest if needed
   valuesFiles:
