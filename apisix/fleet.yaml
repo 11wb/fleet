@@ -1,9 +1,12 @@
 defaultNamespace: apisix
 helm:
-  releaseName: apisix
-  repo: https://charts.apiseven.com
   chart: apisix/apisix
-  version: 2.11.2 # Replace with latest if needed
-  valuesFiles:
-    - values.yaml
+  repo: https://charts.apiseven.com
+  version: 3.13.0 # Replace with latest if needed
+  releaseName: apisix
+  values:
+    gateway:
+      type: LoadBalancer
+    etcd:
+      enabled: true
 
