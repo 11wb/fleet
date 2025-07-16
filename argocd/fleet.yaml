@@ -1,4 +1,4 @@
-namespace: argocd
+defaultNamespace: argocd
 helm:
   releaseName: argocd
   chart: argo-cd
