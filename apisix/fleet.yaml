@@ -1,4 +1,8 @@
 defaultNamespace: apisix
+helmRepos:
+  - name: apisix
+    url: https://charts.apiseven.com
+
 helm:
   chart: apisix/apisix
   repo: https://charts.apiseven.com
