@@ -1,5 +1,0 @@
-gateway:
-  type: LoadBalancer
-etcd:
-  enabled: true
-
