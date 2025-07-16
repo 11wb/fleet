@@ -2,7 +2,7 @@ defaultNamespace: apisix
 helm:
   chart: apisix/apisix
   repo: https://charts.apiseven.com
-  version: 3.13.0 # Replace with latest if needed
+  version: 2.11.2
   releaseName: apisix
   values:
     gateway:
